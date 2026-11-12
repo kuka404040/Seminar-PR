@@ -23,9 +23,9 @@ app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
 
 // In-memory / file-synced data backup
 const DATA_DIR = path.join(__dirname, 'data');
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
-}
+try {
+  if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+} catch {}
 const PARTICIPANTS_FILE = path.join(DATA_DIR, 'participants.json');
 const SETTINGS_FILE = path.join(DATA_DIR, 'settings.json');
 const PROGRAM_FILE = path.join(DATA_DIR, 'program.json');
@@ -783,6 +783,10 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Server running at http://0.0.0.0:${port}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(port, '0.0.0.0', () => {
+    console.log(`Server running at http://0.0.0.0:${port}`);
+  });
+}
+
+export default app;
