@@ -37,7 +37,7 @@ export const ProgramSection: React.FC<ProgramSectionProps> = ({ language }) => {
       {/* Header */}
       <div className="text-center mb-14">
         <div className="inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-300 tracking-wider uppercase mb-3">
-          Күн тәртібі
+          {t.programBadge}
         </div>
         <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
           {t.programTitle}
