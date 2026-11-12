@@ -196,7 +196,18 @@ async function initNeonDb() {
   }
 }
 
-initNeonDb();
+const dbReady = initNeonDb();
+
+app.use('/api', async (req: Request, res: Response, next: NextFunction) => {
+  await dbReady;
+  if (process.env.VERCEL && !isNeonConnected && req.path !== '/status') {
+    return res.status(503).json({
+      success: false,
+      message: 'Дерекқорға қосылу жоқ / Database not connected'
+    });
+  }
+  next();
+});
 
 // Rate limiter helper for public endpoints
 const ipRequestHistory = new Map<string, number[]>();
