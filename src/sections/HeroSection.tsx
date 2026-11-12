@@ -11,10 +11,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ language }) => {
   const t = translations[language];
 
   const handleScrollToAbout = () => {
-    const el = document.getElementById('about');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
+    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleScrollToRegistration = () => {
+    document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -90,15 +91,26 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ language }) => {
           </div>
         </div>
 
-        {/* CTA Button: СЕМИНАРМЕН ТАНЫСУ */}
-        <button
-          type="button"
-          onClick={handleScrollToAbout}
-          className="group relative inline-flex items-center justify-center gap-2.5 px-8 py-4 text-sm sm:text-base font-bold text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-400 rounded-2xl shadow-xl shadow-cyan-500/25 hover:shadow-cyan-400/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
-        >
-          <span>{t.heroCta}</span>
-          <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-        </button>
+        {/* CTA Buttons: СЕМИНАРМЕН ТАНЫСУ + СЕМИНАРҒА ТІРКЕЛУ */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full px-4 sm:px-0">
+          <button
+            type="button"
+            onClick={handleScrollToAbout}
+            className="group relative w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-sm sm:text-base font-bold text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-400 rounded-2xl shadow-xl shadow-cyan-500/25 hover:shadow-cyan-400/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+          >
+            <span>{t.heroCta}</span>
+            <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+          </button>
+
+          <button
+            type="button"
+            onClick={handleScrollToRegistration}
+            className="group relative w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-sm sm:text-base font-bold text-white border border-cyan-400/60 bg-white/5 backdrop-blur rounded-2xl hover:bg-cyan-400/10 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+          >
+            <span>{t.regTitle}</span>
+            <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+          </button>
+        </div>
 
         {/* Year Label */}
         <div className="mt-8 text-xs font-mono-numbers text-slate-500 tracking-widest uppercase">
