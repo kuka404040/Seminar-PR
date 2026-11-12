@@ -102,14 +102,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ language }) => {
             <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
           </button>
 
-          <button
-            type="button"
-            onClick={handleScrollToRegistration}
-            className="group relative w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-sm sm:text-base font-bold text-white border border-cyan-400/60 bg-white/5 backdrop-blur rounded-2xl hover:bg-cyan-400/10 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
-          >
-            <span>{t.regTitle}</span>
-            <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-          </button>
+          <div className="relative w-full sm:w-auto group">
+            {/* Жарқыл (glow) */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-400 rounded-2xl blur-md opacity-60 group-hover:opacity-100 animate-pulse pointer-events-none" />
+            <button
+              type="button"
+              onClick={handleScrollToRegistration}
+              className="relative w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-sm sm:text-base font-bold text-white bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-500 rounded-2xl shadow-xl shadow-purple-500/40 hover:shadow-cyan-400/50 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+            >
+              <span>{t.regTitle}</span>
+              <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+            </button>
+          </div>
         </div>
 
         {/* Year Label */}
