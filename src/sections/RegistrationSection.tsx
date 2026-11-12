@@ -52,10 +52,10 @@ export const RegistrationSection: React.FC<RegistrationSectionProps> = ({ langua
           });
         } catch {}
       } else {
-        setErrorMessage(res.message || t.errServer);
+        setErrorMessage(t.errServer);
       }
     } catch (err: any) {
-      setErrorMessage(err.message || t.errServer);
+      setErrorMessage(t.errServer);
     } finally {
       setIsSubmitting(false);
     }
