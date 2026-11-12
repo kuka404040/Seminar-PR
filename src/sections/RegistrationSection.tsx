@@ -69,7 +69,7 @@ export const RegistrationSection: React.FC<RegistrationSectionProps> = ({ langua
       {/* Header */}
       <div className="text-center mb-10">
         <div className="inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-300 tracking-wider uppercase mb-3">
-          Онлайн тіркелу
+          {t.regBadge}
         </div>
         <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
           {t.regTitle}
