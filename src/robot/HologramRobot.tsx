@@ -670,7 +670,7 @@ export const HologramRobot: React.FC<HologramRobotProps> = ({ language }) => {
       {/* Official 3-sentence Speech Transcript Box */}
       <div className="mt-6 w-full max-w-2xl px-5 py-4 rounded-2xl glass-panel-subtle border border-cyan-500/20 text-center">
         <p className="text-sm sm:text-base text-slate-200 leading-relaxed font-medium">
-          «Құрметті семинарға қатысушылар, бүгінгі облыстық семинарымызға қош келдіңіздер! Кітап оқу мәдениеті мен жасанды интеллектті ұштастыру жолындағы жұмыстарыңызға сәттілік тілейміз! Семинарымыз сәтті өтсін!»
+          «{t.robotTranscript}»
         </p>
       </div>
 
