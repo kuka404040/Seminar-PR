@@ -19,7 +19,7 @@ export const PdfSection: React.FC<PdfSectionProps> = ({ language }) => {
       {/* Header */}
       <div className="text-center mb-10">
         <div className="inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-300 tracking-wider uppercase mb-3">
-          Ресми құжат
+          {t.pdfBadge}
         </div>
         <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
           {t.pdfTitle}
@@ -37,13 +37,13 @@ export const PdfSection: React.FC<PdfSectionProps> = ({ language }) => {
         </div>
 
         <h3 className="text-lg sm:text-xl font-bold text-white mb-2 max-w-xl">
-          «Оқитын колледжден – зияткер ұлтқа: оқу мәдениеті мен жасанды интеллект үндестігі»
+          {t.pdfDocTitle}
         </h3>
 
         <div className="flex flex-wrap items-center justify-center gap-3 text-xs text-slate-400 mb-8">
           <span className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900 border border-slate-700">
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Бекітілген құжат</span>
+            <span>{t.pdfApproved}</span>
           </span>
           <span className="px-3 py-1 rounded-lg bg-slate-900 border border-slate-700">
             {t.pdfPages}
