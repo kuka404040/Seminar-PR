@@ -21,7 +21,7 @@ export const RobotSection: React.FC<RobotSectionProps> = ({ language }) => {
         <div className="inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-300 tracking-wider uppercase mb-3">
           <span className="flex items-center gap-1.5">
             <Bot className="w-3.5 h-3.5" />
-            <span>Цифрлық көмекші</span>
+            <span>{t.robotBadge}</span>
           </span>
         </div>
         <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
