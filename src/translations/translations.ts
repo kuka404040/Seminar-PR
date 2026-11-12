@@ -73,7 +73,19 @@ export const translations = {
     closingTitle: 'ІЗГІ ТІЛЕК',
     closingText: 'Кітап оқу мәдениетін дамыту мен жасанды интеллект мүмкіндіктерін бірге игерейік! Семинарымыз жемісті, ойлы әрі пайдалы болсын!',
     organizerSign: '«Қайнар» жоғары колледжінің ұжымы',
-    copyright: '© 2026 Высший колледж «Қайнар». Барлық құқықтар қорғалған.',
+    copyright: '© 2026 «Қайнар» жоғары колледжі. Барлық құқықтар қорғалған.',
+
+    lblDate: 'Күні',
+    lblTime: 'Уақыты',
+    lblPlace: 'Орны',
+    heroCityYear: 'Семей · 2026 жыл',
+    regBadge: 'Онлайн тіркелу',
+    robotBadge: 'Цифрлық көмекші',
+    aboutBadge: 'Ақпараттық шолу',
+    pdfBadge: 'Ресми құжат',
+    pdfApproved: 'Бекітілген құжат',
+    programBadge: 'Күн тәртібі',
+    pdfDocTitle: '«Оқитын колледжден – зияткер ұлтқа: оқу мәдениеті мен жасанды интеллект үндестігі»',
 
     // Admin
     adminPortal: 'Әкімшілік панель',
@@ -170,6 +182,18 @@ export const translations = {
     organizerSign: 'Коллектив Высшего колледжа «Қайнар»',
     copyright: '© 2026 Высший колледж «Қайнар». Все права защищены.',
 
+    lblDate: 'Дата',
+    lblTime: 'Время',
+    lblPlace: 'Место',
+    heroCityYear: 'Семей · 2026 год',
+    regBadge: 'Онлайн-регистрация',
+    robotBadge: 'Цифровой помощник',
+    aboutBadge: 'Информационный обзор',
+    pdfBadge: 'Официальный документ',
+    pdfApproved: 'Утверждённый документ',
+    programBadge: 'Повестка',
+    pdfDocTitle: '«От читающего колледжа – к интеллектуальной нации: созвучие культуры чтения и искусственного интеллекта»',
+
     // Admin
     adminPortal: 'Панель администратора',
     adminLogin: 'Вход в систему',
@@ -264,6 +288,18 @@ export const translations = {
     closingText: 'Let us develop reading culture and master the potential of artificial intelligence together! We wish our seminar great success and inspiring insights!',
     organizerSign: 'Faculty & Administration of Higher College "Qaynar"',
     copyright: '© 2026 Higher College "Qaynar". All rights reserved.',
+
+    lblDate: 'Date',
+    lblTime: 'Time',
+    lblPlace: 'Venue',
+    heroCityYear: 'Semey · 2026',
+    regBadge: 'Online registration',
+    robotBadge: 'Digital assistant',
+    aboutBadge: 'Overview',
+    pdfBadge: 'Official document',
+    pdfApproved: 'Approved document',
+    programBadge: 'Agenda',
+    pdfDocTitle: '“From a Reading College to an Intellectual Nation: Harmony of Reading Culture and Artificial Intelligence”',
 
     // Admin
     adminPortal: 'Admin Dashboard',
