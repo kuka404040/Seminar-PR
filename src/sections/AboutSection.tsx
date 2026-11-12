@@ -26,7 +26,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ language }) => {
       {/* Section Header */}
       <div className="text-center mb-12">
         <div className="inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-300 tracking-wider uppercase mb-3">
-          Ақпараттық шолу
+          {t.aboutBadge}
         </div>
         <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
           {t.aboutTitle}
