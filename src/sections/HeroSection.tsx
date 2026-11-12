@@ -65,7 +65,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ language }) => {
               <Calendar className="w-4 h-4" />
             </div>
             <div>
-              <div className="text-[11px] text-slate-400 font-medium">Күні / Дата</div>
+              <div className="text-[11px] text-slate-400 font-medium">{t.lblDate}</div>
               <div className="text-xs sm:text-sm font-bold text-white">{t.dateLabel}</div>
             </div>
           </div>
@@ -75,7 +75,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ language }) => {
               <Clock className="w-4 h-4" />
             </div>
             <div>
-              <div className="text-[11px] text-slate-400 font-medium">Уақыты / Время</div>
+              <div className="text-[11px] text-slate-400 font-medium">{t.lblTime}</div>
               <div className="text-xs sm:text-sm font-bold text-white font-mono-numbers">{t.timeLabel}</div>
             </div>
           </div>
@@ -85,7 +85,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ language }) => {
               <MapPin className="w-4 h-4" />
             </div>
             <div>
-              <div className="text-[11px] text-slate-400 font-medium">Орны / Место</div>
+              <div className="text-[11px] text-slate-400 font-medium">{t.lblPlace}</div>
               <div className="text-xs sm:text-sm font-bold text-white truncate max-w-[160px] sm:max-w-none">{t.placeLabel}</div>
             </div>
           </div>
@@ -118,7 +118,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ language }) => {
 
         {/* Year Label */}
         <div className="mt-8 text-xs font-mono-numbers text-slate-500 tracking-widest uppercase">
-          Семей · {t.year} жыл
+          {t.heroCityYear}
         </div>
       </div>
     </section>
