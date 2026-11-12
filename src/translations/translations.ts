@@ -86,6 +86,7 @@ export const translations = {
     pdfApproved: 'Бекітілген құжат',
     programBadge: 'Күн тәртібі',
     pdfDocTitle: '«Оқитын колледжден – зияткер ұлтқа: оқу мәдениеті мен жасанды интеллект үндестігі»',
+    robotTranscript: 'Құрметті семинарға қатысушылар, бүгінгі облыстық семинарымызға қош келдіңіздер! Кітап оқу мәдениеті мен жасанды интеллектті ұштастыру жолындағы жұмыстарыңызға сәттілік тілейміз! Семинарымыз сәтті өтсін!',
 
     // Admin
     adminPortal: 'Әкімшілік панель',
@@ -193,6 +194,7 @@ export const translations = {
     pdfApproved: 'Утверждённый документ',
     programBadge: 'Повестка',
     pdfDocTitle: '«От читающего колледжа – к интеллектуальной нации: созвучие культуры чтения и искусственного интеллекта»',
+    robotTranscript: 'Уважаемые участники семинара, добро пожаловать на сегодняшний областной семинар! Желаем успехов в вашей работе по сочетанию культуры чтения и искусственного интеллекта! Пусть наш семинар пройдёт успешно!',
 
     // Admin
     adminPortal: 'Панель администратора',
@@ -300,6 +302,7 @@ export const translations = {
     pdfApproved: 'Approved document',
     programBadge: 'Agenda',
     pdfDocTitle: '“From a Reading College to an Intellectual Nation: Harmony of Reading Culture and Artificial Intelligence”',
+    robotTranscript: 'Dear seminar participants, welcome to today’s regional seminar! We wish you success in your work on combining reading culture and artificial intelligence! May our seminar be a success!',
 
     // Admin
     adminPortal: 'Admin Dashboard',
