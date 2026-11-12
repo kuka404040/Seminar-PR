@@ -14,6 +14,17 @@ import { api } from './services/api';
 
 export default function App() {
   const [language, setLanguage] = useState<Language>('kk');
+
+  // Браузер қойындысының атауы мен html lang — таңдалған тілге сәйкес
+  useEffect(() => {
+    const titles: Record<string, string> = {
+      kk: '«Оқитын колледжден – зияткер ұлтқа» — «Қайнар» жоғары колледжі',
+      ru: '«От читающего колледжа – к интеллектуальной нации» — Высший колледж «Кайнар»',
+      en: '“From a Reading College to an Intellectual Nation” — Higher College “Qaynar”',
+    };
+    document.title = titles[language] || titles.kk;
+    document.documentElement.lang = language;
+  }, [language]);
   const [isAdminRoute, setIsAdminRoute] = useState(false);
   const [adminToken, setAdminToken] = useState<string | null>(null);
   const [isCheckingAdmin, setIsCheckingAdmin] = useState(true);
