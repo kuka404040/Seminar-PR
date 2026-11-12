@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Language, ProgramEvent } from '../types';
+import { programI18n } from '../translations/programI18n';
 import { translations } from '../translations/translations';
 import { api } from '../services/api';
 import { Clock, MapPin, UserCheck, CalendarDays } from 'lucide-react';
@@ -54,7 +55,10 @@ export const ProgramSection: React.FC<ProgramSectionProps> = ({ language }) => {
 
         <div className="space-y-6 sm:space-y-8">
           {events.map((event, idx) => {
-            const isSmartLibrary = event.location.includes('Smart Library');
+            const tr = programI18n[language]?.[event.id];
+            const evTitle = tr?.title ?? event.title;
+            const evLocation = tr?.location ?? event.location;
+            const evSpeakers = tr?.speakers ?? event.speakers;
             return (
               <div key={event.id || idx} className="relative flex items-start gap-4 sm:gap-8 group">
                 {/* Timeline node */}
@@ -77,21 +81,21 @@ export const ProgramSection: React.FC<ProgramSectionProps> = ({ language }) => {
 
                     <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-800/80 border border-slate-700 text-xs text-slate-300">
                       <MapPin className="w-3 h-3 text-cyan-400" />
-                      <span>{event.location}</span>
+                      <span>{evLocation}</span>
                     </div>
                   </div>
 
                   {/* Title */}
                   <h3 className="text-base sm:text-lg font-bold text-white mb-3 leading-snug group-hover:text-cyan-200 transition-colors">
-                    {event.title}
+                    {evTitle}
                   </h3>
 
                   {/* Speaker & Affiliation */}
-                  {event.speakers && (
+                  {evSpeakers && (
                     <div className="pt-3 border-t border-slate-800/80 flex items-start gap-2.5 text-xs sm:text-sm text-slate-300">
                       <UserCheck className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
                       <div className="whitespace-pre-line leading-relaxed font-medium">
-                        {event.speakers}
+                        {evSpeakers}
                       </div>
                     </div>
                   )}
