@@ -183,6 +183,7 @@ export const RegistrationSection: React.FC<RegistrationSectionProps> = ({ langua
                 <span className="text-slate-400">{t.regDateLabel}:</span>
                 <span className="font-mono-numbers text-slate-300">
                   {new Date(successParticipant.created_at).toLocaleString('kk-KZ', {
+                    timeZone: 'Asia/Almaty',
                     day: '2-digit',
                     month: '2-digit',
                     year: 'numeric',
