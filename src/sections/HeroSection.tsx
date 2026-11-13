@@ -10,8 +10,8 @@ interface HeroSectionProps {
 export const HeroSection: React.FC<HeroSectionProps> = ({ language }) => {
   const t = translations[language];
 
-  const handleScrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  const handleScrollToProgram = () => {
+    document.getElementById('program')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const handleScrollToRegistration = () => {
@@ -95,7 +95,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ language }) => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full px-4 sm:px-0">
           <button
             type="button"
-            onClick={handleScrollToAbout}
+            onClick={handleScrollToProgram}
             className="group relative w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-sm sm:text-base font-bold text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-400 rounded-2xl shadow-xl shadow-cyan-500/25 hover:shadow-cyan-400/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
           >
             <span>{t.heroCta}</span>
