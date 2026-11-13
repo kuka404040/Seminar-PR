@@ -11,7 +11,7 @@ export const translations = {
     dateLabel: '20 қараша 2026 жыл',
     timeLabel: '09:00 – 13:00',
     placeLabel: 'Семей қ., «Қайнар» жоғары колледжі ЖШС',
-    heroCta: 'СЕМИНАРМЕН ТАНЫСУ',
+    heroCta: 'СЕМИНАР БАҒДАРЛАМАСЫ',
 
     // About Section
     aboutTitle: 'СЕМИНАР ТУРАЛЫ',
@@ -119,7 +119,7 @@ export const translations = {
     dateLabel: '20 ноября 2026 года',
     timeLabel: '09:00 – 13:00',
     placeLabel: 'г. Семей, ТОО «Высший колледж «Кайнар»',
-    heroCta: 'ПОЗНАКОМИТЬСЯ С СЕМИНАРОМ',
+    heroCta: 'ПРОГРАММА СЕМИНАРА',
 
     // About Section
     aboutTitle: 'О СЕМИНАРЕ',
@@ -227,7 +227,7 @@ export const translations = {
     dateLabel: 'November 20, 2026',
     timeLabel: '09:00 – 13:00',
     placeLabel: 'Semey city, Higher College "Qaynar"',
-    heroCta: 'EXPLORE THE SEMINAR',
+    heroCta: 'SEMINAR PROGRAMME',
 
     // About Section
     aboutTitle: 'ABOUT THE SEMINAR',
