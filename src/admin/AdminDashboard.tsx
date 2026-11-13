@@ -444,6 +444,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                           <td className="py-3 px-4 text-slate-300 max-w-xs truncate">{p.organization}</td>
                           <td className="py-3 px-4 font-mono-numbers text-slate-400 text-xs">
                             {new Date(p.created_at).toLocaleString('kk-KZ', {
+                              timeZone: 'Asia/Almaty',
                               day: '2-digit',
                               month: '2-digit',
                               hour: '2-digit',
