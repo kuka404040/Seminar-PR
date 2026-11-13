@@ -111,11 +111,11 @@ export default function App() {
       {/* 1. Главный экран */}
       <HeroSection language={language} />
 
-      {/* 2. Информация о семинаре */}
-      <AboutSection language={language} />
-
-      {/* 3. Регистрация участников */}
+      {/* 2. Регистрация участников */}
       <RegistrationSection language={language} />
+
+      {/* 3. Информация о семинаре */}
+      <AboutSection language={language} />
 
       {/* 4. Официальная программа семинара */}
       <ProgramSection language={language} />
