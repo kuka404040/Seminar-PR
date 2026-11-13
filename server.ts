@@ -661,7 +661,7 @@ app.get('/api/admin/export/excel', async (req: Request, res: Response) => {
   // Subtitle / Date row
   worksheet.mergeCells('A2:F2');
   const subCell = worksheet.getCell('A2');
-  subCell.value = `Экспорт күні: ${new Date().toLocaleString('kk-KZ')} | Қатысушылар саны: ${list.length}`;
+  subCell.value = `Экспорт күні: ${new Date().toLocaleString('kk-KZ', { timeZone: 'Asia/Almaty' })} | Қатысушылар саны: ${list.length}`;
   subCell.font = { name: 'Arial', size: 10, italic: true, color: { argb: 'FF94A3B8' } };
   subCell.fill = {
     type: 'pattern',
@@ -702,6 +702,7 @@ app.get('/api/admin/export/excel', async (req: Request, res: Response) => {
   list.forEach((p, idx) => {
     const rowNumber = idx + 4;
     const formattedDate = new Date(p.created_at).toLocaleString('kk-KZ', {
+      timeZone: 'Asia/Almaty',
       year: 'numeric',
       month: '2-digit',
       day: '2-digit',
